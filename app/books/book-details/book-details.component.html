@@ -1,0 +1,38 @@
+<div class="container">   
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-11">
+          <h2>{{book?.name | uppercase}} </h2>
+        </div>
+      </div> 
+      <div class="row">
+        <div class="col-md-6">
+          <div><strong>ID:</strong> {{book?.id}}</div>
+          <div><strong>Author:</strong> {{book?.author}}</div>
+          <div><strong>Genre:</strong> {{book?.bookGenre.genre}}</div>
+          <div><strong>Number of pages:</strong> {{book?.numberOfPages}}</div>
+          <div><strong>Row number:</strong> {{book?.row}}</div>
+          <div><strong>Shelf number:</strong> {{book?.shelf}}</div>
+          <div><strong>Added:</strong> {{book?.added}}</div>
+        </div>
+      </div>
+      <div style="margin-top: 20px;">
+        <button type="submit" class="btn btn-primary">Check availability</button>
+      </div>
+      <div style="margin-top: 20px;">
+          <button type="submit" class="btn btn-primary">Rent this book</button>
+        </div>
+    </div>
+    <div class="col-md-6">
+      <img class="book-image" [src]="book?.image" [alt]="book?.name">
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <h4>About</h4>
+    <div>{{book?.about}}</div>
+  </div>
+</div>
+  
+   

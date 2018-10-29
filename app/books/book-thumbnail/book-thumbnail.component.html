@@ -1,0 +1,6 @@
+<div [routerLink]="['/books', book.id]" class="well hoverwell thumbnail">
+    <h2>{{book?.name | uppercase}}</h2>
+    <div>Author: {{book?.author}}</div>
+    <div>Genre: {{book?.bookGenre.genre}}</div>
+    <div>Number of pages: {{book?.numberOfPages}}</div>
+</div>
